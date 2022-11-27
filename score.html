@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="score.css">
+</head>
+<body>
+    <div  id="run">
+        <button class="add" onclick="addPlayer()">Add Player</button>
+        <br><br><br>
+        <label for="s">Enter Score for:<span id="ov1">0</span>.<span id="ov">0</span></label>
+        <input type="text" name="run" id="s">
+        <br><br><br>
+        <button id="sub" onclick="handleSubmit()">submit</button>
+    </div>
+
+    <div  id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+        <div class="w3-container">
+            <div class="rl">
+               <H1>Add Player</H1>
+               <label for="type">Player Type :</label>
+               <select id="type">
+                     <option value="Batsman" selected>Batsman</option>
+                     <option value="Bowler">Bowler</option>
+               </select>
+               <br><br>
+               <label for="name">Player Name:</label>
+               <input type="text" name="" id="name">
+               <br><br>
+
+               <button onclick="handleSave()">Save</button>
+               <button id="cancel" onclick="handleCancel()">Cancel</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <div>
+        <p><b>IND-<span id="runs">0</span>/<span id="wicket">0</span>(<span id="over1">0</span>.<span id="over">0</span>)</b></p>
+        <div>
+            <table id="batting">
+                <tr>
+                    <th>Batting</th>
+                    <th>R</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="bowling">
+                <tr>
+                    <th>Bowling</th>
+                    <th>O</th>
+                    <th>R</th>
+                    <th>W</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+  <script src="score.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+#run{
+    border-style: solid;
+    width:241px;
+    padding: 10px;
+    
+}
+
+.add{
+    margin-left: 95px;
+}
+
+#sub{
+    margin-left: 119px;
+}
+
+#id01{
+    padding: 10px;
+}
+.w3-container, .w3-panel {
+    padding: 2.01em 16px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+td:first-child{
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+    color: rgb(101, 23, 228);
+}
+td{
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+}
+th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+    color: darkgrey;
+}
+body{
+    background-color: aquamarine;
+}
